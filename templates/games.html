@@ -1,0 +1,124 @@
+
+<body>
+
+    <div class="container">
+
+
+            {% if out_data.get('test')== '1' %}
+            <ul class="nav navbar-nav navbar-right">
+                <a href="{{ url_for('refresh') }}"><button class="btn btn-success"><span class="glyphicon glyphicon-thumbs-up"></span> Success</button></a>
+                    <!-- <button><input type="submit"></button> -->
+            </ul>
+            {% else %}
+            <ul class="nav navbar-nav navbar-right">
+                <a href="{{ url_for('refresh') }}"><button class="btn btn-primary"><span class="glyphicon glyphicon-refresh"></span> Refresh</button></a>
+                    <!-- <button><input type="submit"></button> -->
+            </ul>
+            {%endif%}
+            <nav class="navbar navbar-default navbar-fixed-top"">
+                <div class="collapse navbar-collapse" id="navbarList">
+                    <ul class="nav navbar-nav">
+                        <li class="nav-item">
+                            <h5>Anirudh</h5>
+                            <ul>
+                                {% for i in out_data.Anirudh %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>Aniket</h5>
+                            <ul>
+                                {% for i in out_data.Aniket %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>Shrey</h5>
+                            <ul>
+                                {% for i in out_data.Shrey %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>Jitendra</h5>
+                            <ul>
+                                {% for i in out_data.Jitendra %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>shreya</h5>
+                            <ul>
+                                {% for i in out_data.shreya %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>Deepak</h5>
+                            <ul>
+                                {% for i in out_data.Deepak %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>hitesh</h5>
+                            <ul>
+                                {% for i in out_data.hitesh %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>shraddha</h5>
+                            <ul>
+                                {% for i in out_data.shraddha %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>praveen</h5>
+                            <ul>
+                                {% for i in out_data.praveen %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <h5>sanil</h5>
+                            <ul>
+                                {% for i in out_data.sanil %}
+                                    <li>{{i}}</li>
+                                {% endfor %}
+                            </ul>
+                        </li>
+                  </div>
+                </div>
+                <br>
+              </nav>
+
+
+      
+
+
+        </div>
+      </nav>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+
+
+
+
